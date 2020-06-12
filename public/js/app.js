@@ -19,7 +19,8 @@ weatherForm.addEventListener('submit', (e)=>{
             } else {
                 
                 messageOne.textContent=data.address+', '+data.forecast.time
-                messageTwo.textContent=data.forecast.report+', '+data.forecast.weather
+                messageTwo.textContent=data.forecast.report+', '+data.forecast.clouds+', '
+                +data.forecast.windSpeed+', '+data.forecast.weather
             }
         })
     })

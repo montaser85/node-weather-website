@@ -14,6 +14,8 @@ const forecast=(latitude, longitude, callback)=>{
         
                 time:'Timezone: '+body.timezone,
                 report:'It is currently '+body.current.temp+' degree with humidity of '+body.current.humidity,
+                clouds:'Clouds: '+body.current.clouds,
+                windSpeed: 'Wind Speed '+body.current.wind_speed, 
                 weather:'Weather: '+body.current.weather[0].description
             })
         }    
